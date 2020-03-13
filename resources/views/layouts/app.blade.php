@@ -1,0 +1,9 @@
+@include('includes.links')
+@guest
+@else
+  @include('includes.navbar')
+  @include('includes.menu')
+@endguest
+@yield('content')
+@include('includes.footer')
+@include('includes.scripts')
